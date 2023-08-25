@@ -48,8 +48,9 @@ main{
 
 .contenedor{
     width: 400px;
-    height: 620px;
+    height: 100vh;
     justify-content: center;
+    
 }
 
 .principal .imagen{
@@ -143,7 +144,7 @@ footer{
     justify-content: center;
     align-items: center;
     background-color: #00669f;
-    padding-top: 10px;
+    padding: 15px 0;
 }
 
 footer p{
@@ -166,17 +167,18 @@ footer p{
     top: 10px;   
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .descuento{
-        width: 100vw;
-    }
-
-    main{
         width: 100vw;
     }
 
     header{
         width: 100vw;
+    }
+
+    main .contenedor{
+        max-width: 350px;
+        margin: auto;
     }
 
     footer{
@@ -195,4 +197,5 @@ footer p{
         position: relative;
         right: 350px;
     }
+
 }
